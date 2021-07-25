@@ -1,0 +1,123 @@
+#titleHeader {
+    background-image: linear-gradient(to bottom right, #dcf3ff,#bdc3ff);
+    padding-top: 80px;
+    padding-left: 75px;
+    padding-bottom: 65px;
+    font-size: 50px;
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+textarea {
+    font-family: 'Lato', sans-serif !important;
+}
+
+.control {
+    padding-left: 155px;
+    padding-right: 155px;
+}
+
+.button {
+    margin-left: 200px;
+    font-family: 'Otomanopee One', sans-serif;
+    border-radius: 20px;
+    background-color: #99dbff;
+    color: white;
+    border-color: #0085cc;
+    outline: none;
+    box-shadow: 0 9px #006399;
+}
+
+.button:hover {
+    background-image: linear-gradient(to bottom right, #ffc558,#ff54da);
+    color: white;
+    border-color: grey;
+    border-width: 2px;
+    box-shadow: 0 12px 16px 0 #fffb00, 0 17px 50px 0 #f7f3c4;
+}
+
+#butTon {
+    margin-bottom: 80px;
+    margin-top: 21px;
+    outline: none;
+}
+
+#addSongName {
+    margin-bottom: 93px;
+    font-family: 'Otomanopee One', sans-serif;
+    border-radius: 20px;
+    border-color: grey;
+    border-width: 2px;
+    box-shadow: 0 12px #ffc558;
+    background-image: linear-gradient(to bottom right, #fce0ae,#fdb1ed);
+}
+
+#viewSongArtist {
+    margin-left: 250px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 25px;
+}
+
+h2 {
+    font-size: 37px;
+    padding-left: 150px;
+}
+
+.fooTer {
+    background-image: linear-gradient(to bottom right, #bdc3ff,#dcf3ff);
+    line-height: 40px;
+    text-align: center;
+}
+
+#viewSong {
+    padding-top: 40px;
+    background-color: #e6f6ff;
+}
+
+#addSong {
+    padding-top: 40px;
+    background-color: #e6f6ff;
+}
+
+h2, h4, p {
+    font-family: 'Raleway', sans-serif;
+}
+
+#subtitle {
+    font-size: 17px;
+    padding-right: 50px;
+    padding-left: 30px;
+}
+
+#additionalh1 {
+    background-color: #e6f6ff;
+    color: #e6f6ff;
+    font-size: 30px;
+    padding-left: 0px;
+}
+
+#additionalh12 {
+    background-color: #e6f6ff;
+    color: #e6f6ff;
+    font-size: 30px;
+    padding-left: 0px;
+}
+
+#addSongArtist {
+    font-family: 'Otomanopee One', sans-serif;
+    border-radius: 20px;
+    border-color: grey;
+    border-width: 2px;
+    box-shadow: 0 12px #ff54da;
+    background-image: linear-gradient(to bottom right, #fdb1ed,#fce0ae);
+}
+
+#viewSongName {
+    font-family: 'Otomanopee One', sans-serif;
+    border-radius: 20px;
+    border-color: grey;
+    border-width: 2px;
+    box-shadow: 0 12px #ff54da;
+    background-image: linear-gradient(to bottom right, #fdb1ed,#fce0ae);
+}

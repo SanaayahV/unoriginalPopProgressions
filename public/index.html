@@ -4,88 +4,109 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-    		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
    		 <meta name="viewport" content="width=device-width, initial-scale=1">
-    		<title>Unoriginal Pop Progressions</title>
-    		<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
-    		<link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
-    		<link rel="stylesheet" type="text/css" href="css/
->
-    		<link rel="stylesheet" type="text/css" href="css/unoriginalpopprogressions.css">
+    	<title>Unoriginal Pop Progressions</title>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&family=Raleway:ital,wght@1,600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap" rel="stylesheet">
+    	<link rel="stylesheet" type="text/css" href="css/unoriginalPopProgressions.css">
 		<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script defer src="/__/firebase/8.3.1/firebase-app.js"></script>
-<!-- include only the Firebase features as you need -->
-<script defer src="/__/firebase/8.3.1/firebase-database.js"></script>
-<script defer src="/__/firebase/init.js?useEmulator=true"></script>
+        <script defer src="/__/firebase/8.3.1/firebase-app.js"></script>
+        <!-- include only the Firebase features as you need -->
+        <script defer src="/__/firebase/8.3.1/firebase-database.js"></script>
+        <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 	</head>
 	
-	<body>
-<section id="header">
-    <h1>
-      Pop songs with the same progressions!
-    </h1>
-</section>
+<body>
+
+    <h1 id="additionalh1">i am typing words because I do not know what to type here. 
+            I hope these words are sufficient :)</h1>
+    
+    <section id="titleHeader">
+        <h1>Pop songs with the same progressions!</h1>
+        <br>
+        <h2 id="subtitle">Within pop music, there are very popular progressions! 
+            The progression that rises above them all however consists 
+            of 4 key chords: Am, F, G and C. These chords are all in 
+            songs we know well, like "I don’t care" by Ed Sheeran to 
+            “I like me better“ by Lauv, and these chords dominate the 
+            mainstream. Within this WebApp, you have the option to 
+            search the database for a pop song that has this chord 
+            progression and you also have the option to add songs you 
+            know with this chord progression or even a pop song you 
+            like! Happy vibing!</h2>
+    </section>
+    
  
-<section id="content">
+    <section id="content">
 
-    <div id="viewSong" class="card">
-        <div class="card-content" >
-             <div class="field">
-                <div class="control"> Okay let's do this! YES.
+        <div id="viewSong" class="card">
 
-                    <textarea class="textarea is-medium" type="text" id="viewSongName" placeholder="TYPE THE SONG'S NAME, HUMAN.">
+            <h2>View a song!</h2>
 
-                    </textarea>
-                </div>
+            <div class="card-content" >
+                <div class="field">
+                    <div class="control">
+                        <textarea class="textarea is-medium" type="text" id="viewSongName" placeholder="Name of the song you want to view?"></textarea>
+                    </div> 
+                </div>     
 
-            </div>
-                       
-                    <h4 id="viewSongArtist">
-
-                    </h4>
-
+                <h4 id="viewSongArtist"></h4>
                                    
-                  <button class="button" onclick="viewMessages()">
-                    Click me!
-                  </button>
-                 
-                  
+                <button class="button" onclick="viewMessages()">Click me!</button>   
+            </div>
         </div>
-    </div>
-    <div id="addSong" class="card">
 
-        <div class="card-content">
-            <div class="field">
-                <div class="control">
+        <div id="addSong" class="card">
 
-                    <textarea class="textarea is-medium" type="text" id="addSongName" placeholder="TYPE THE SONG'S NAME, HUMAN.">
+            <h2>Add a song!</h2>
 
-                    </textarea>
+            <div class="card-content">
+                <div class="field">
+                    <div class="control">
+                        <textarea class="textarea is-medium" type="text" id="addSongName" placeholder="Name of the song you want to add?"></textarea>
+                    </div>
                 </div>
 
+                <div class="field">
+                    <div class="control">
+                        <textarea class="textarea is-medium" type="text" id="addSongArtist" placeholder="Artist of the song you want to add?"></textarea>
+                    </div> 
+                </div>
+
+                <button class="button" id="butTon" onclick="addSongs()">Click me!</button>
             </div>
         </div>
-         <div class="field">
-                <div class="control">
 
-                    <textarea class="textarea is-medium" type="text" id="addSongArtist" placeholder="TYPE THE SONG'S ARTIST, HUMAN.">
+     
 
-                    </textarea>
-                </div> 
+    </section>
 
-            </div>
-    </div>
+    <section>
+        <footer class="fooTer">
+            <p>Thank you for using our WebApp! We worked hard in unison to make sure this WebApp was fully functional</p>
+            <p>This WebApp uses Firebase, Javascript, HTML and CSS respectively</p>
+            <p>Created by Lydia and Sanaayah</p>
+        </footer>
+        <h1 id="additionalh12">i am typing words because I do not know what to type here. 
+            I hope these words are sufficient :)</h1>
+    </section>
+    
 
-     <button class="button" onclick="addSongs()">
-                    Click me!
-                  </button>
 
-</section>
-One sec T^T
 
 <!-- viewSong and addSong are things that want to be added in to the content section-->
         
-<script src="js/unoriginalPopProgressions.js"></script>
+        <script src="js/unoriginalPopProgressions.js"></script>
     </body>
     
 
